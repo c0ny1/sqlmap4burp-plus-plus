@@ -23,9 +23,11 @@ sqlmap4burp++对[sqlmap4burp](https://github.com/difcareer/sqlmap4burp)进行了
 * 原因一：没有允许运行外部`Burp suite`运行`osascript`。
 * 原因二：没有启动终端（Terminal），请将其启动。若已经是运行状态，那么请重启它！
 
-#### 2.在linux下弹窗了，为何没有执行命令呢？
-插件已经将命令复制到剪贴板，将其粘贴到弹出的命令窗口即可！目前插件在Linux下暂时无法实现启动Terminal的同时使其运行sqlmap命令，所以暂时采用这种临时的方法。
+#### 2.在Linux下弹出Terminal，为何没有执行命令呢？
+这是正常现象，插件已经将命令复制到剪贴板，将其粘贴到弹出的命令窗口即可！目前插件在Linux下暂时无法实现启动Terminal的同时使其运行sqlmap命令，所以暂时采用这种临时的方法。
 
+#### 3.插件每次都必须要配置`Python name`和`Sqlmap path`么？
+这两个配置是插件保证正常运行的关键，但并不需要每次配置，只需要第一次使用插件时配置好即可。之后无论是关闭插件，重启Burp suite，配置内容都会被记录好。
 ## 0x04 参考项目
 * https://github.com/blueroutecn/Burpsuite4Extender
 * https://github.com/difcareer/sqlmap4burp
