@@ -2,7 +2,7 @@
 ## 0x01 插件简介
 sqlmap4burp++对[sqlmap4burp](https://github.com/difcareer/sqlmap4burp)进行了重构,可在多个平台下联动burpsuite于与sqlmap。
 
-![插件ui](./doc/sqlmap4burp++.png)
+![插件ui](doc/sqlmap4burp++ui.png)
 
 在sqlmap4burp基础上进行了如下改动：
 
