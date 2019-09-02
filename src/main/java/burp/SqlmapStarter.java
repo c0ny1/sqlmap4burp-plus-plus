@@ -8,9 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-/**
- * Created by wm on 2014/9/25.
- */
 public class SqlmapStarter implements Runnable {
 
     @Override
