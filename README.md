@@ -2,6 +2,8 @@
 ## 0x01 插件简介
 sqlmap4burp++对[sqlmap4burp](https://github.com/difcareer/sqlmap4burp)进行了重构,可在多个平台下联动burpsuite于与sqlmap。
 
+![插件ui](./doc/sqlmap4burp++.png)
+
 在sqlmap4burp基础上进行了如下改动：
 
 * 在支持Windows基础上，拓展对Linux，Mac OSX的支持
@@ -20,6 +22,7 @@ sqlmap4burp++对[sqlmap4burp](https://github.com/difcareer/sqlmap4burp)进行了
 
 ## 0x03 FQA
 #### 1.在Mac OSX下无法弹出Terminal？
+出现这种情况，一般有以下两个原因。
 * 原因一：没有允许运行外部`Burp suite`运行`osascript`。
 * 原因二：没有启动终端（Terminal），请将其启动。若已经是运行状态，那么请重启它！
 
