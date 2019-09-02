@@ -1,10 +1,10 @@
 # sqlmap4burp++ | burp联动sqlmap插件
 ## 0x01 插件简介
-sqlmap4burp++对[sqlmap4burp](https://github.com/difcareer/sqlmap4burp)进行重构,在多平台下使用burpsuite于sqlmap的快速联动
+sqlmap4burp++对[sqlmap4burp](https://github.com/difcareer/sqlmap4burp)进行了重构,可在多个平台下联动burpsuite于与sqlmap。
 
 在sqlmap4burp基础上进行了如下改动：
 
-* 在支持windows基础上拓展对linux，mac ox的支持
+* 在支持Windows基础上，拓展对Linux，Mac OSX的支持
 * 移除对commons-io-<version>.jar,commons-langs-<version>.jar的依赖
 * 移除Burpsuite tab面板，采用弹窗式配置，让界面更加简洁易用。
 * 移除了多余的代码
