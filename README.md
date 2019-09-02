@@ -18,13 +18,13 @@ sqlmap4burp++对[sqlmap4burp](https://github.com/difcareer/sqlmap4burp)进行了
 
 [![视频演示](https://img.youtube.com/vi/Rcyfm8bd63o/0.jpg)](https://www.youtube.com/watch?v=Rcyfm8bd63o)
 
-## 0x03 FAQ
-#### 1.在Mac OSX下无法弹出命令行？
-* 原因一：没有允许运行外部burpsuite运行osascript。
+## 0x03 FQA
+#### 1.在Mac OSX下无法弹出Terminal？
+* 原因一：没有允许运行外部`Burp suite`运行`osascript`。
 * 原因二：没有启动终端（Terminal），请将其启动。若已经是运行状态，那么请重启它！
 
 #### 2.在linux下弹窗了，为何没有执行命令呢？
-插件已经将命令复制到剪贴板，将其粘贴到弹出的命令窗口即可！目前插件暂时无法实现启动，同时使其运行sqlmap命令，所以暂时采用这种临时的方法。
+插件已经将命令复制到剪贴板，将其粘贴到弹出的命令窗口即可！目前插件在Linux下暂时无法实现启动Terminal的同时使其运行sqlmap命令，所以暂时采用这种临时的方法。
 
 ## 0x04 参考项目
 * https://github.com/blueroutecn/Burpsuite4Extender
