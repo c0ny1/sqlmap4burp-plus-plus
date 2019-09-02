@@ -18,7 +18,7 @@ sqlmap4burp++对[sqlmap4burp](https://github.com/difcareer/sqlmap4burp)进行了
 * Mac OSX：Mojave 10.14.5
 * Linux：Kali2019.2,Ubuntu,Centos
 
-[![视频演示](https://img.youtube.com/vi/Rcyfm8bd63o/0.jpg)](https://www.youtube.com/watch?v=Rcyfm8bd63o)
+[![视频演示](https://img.youtube.com/vi/1RWVkztssvw/0.jpg)](https://www.youtube.com/watch?v=1RWVkztssvw)
 
 ## 0x03 FQA
 #### 1.在Mac OSX下无法弹出Terminal？
