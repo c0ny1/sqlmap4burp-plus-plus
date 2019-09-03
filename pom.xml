@@ -16,7 +16,11 @@
             <version>1.7.22</version>
         </dependency>
     </dependencies>
-
+    <properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+    </properties>
+         
     <build>
         <plugins>
             <plugin>
