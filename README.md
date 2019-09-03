@@ -16,7 +16,7 @@ sqlmap4burp++对[sqlmap4burp](https://github.com/difcareer/sqlmap4burp)进行了
 已经在如下系统测试成功：
 * Windows：7,10
 * macOS：Mojave 10.14.5
-* Linux：Kali2019.2,Ubuntu,Centos
+* Linux：Kali2019.2
 
 [![视频演示](https://img.youtube.com/vi/1RWVkztssvw/0.jpg)](https://www.youtube.com/watch?v=1RWVkztssvw)
 
