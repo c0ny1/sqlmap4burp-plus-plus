@@ -42,7 +42,7 @@ public class Util {
             fos.close();
         } catch (Exception e) {
             //e.printStackTrace();
-            BurpExtender.stderr.println(e.getMessage());
+            BurpExtender.stderr.println("[*] " + e.getMessage());
         }
     }
 
@@ -65,7 +65,7 @@ public class Util {
             fos.close();
             return batFile;
         } catch (Exception e) {
-            BurpExtender.stderr.println(e.getMessage());
+            BurpExtender.stderr.println("[*] "+e.getMessage());
             return "Fail";
         }
     }

@@ -131,7 +131,7 @@ public class ConfigDlg extends JDialog {
      */
     public void initValue(){
         tfPythonName.setText(Config.getPythonName());
-        BurpExtender.stderr.println("Python name:"+Config.getPythonName());
+        //BurpExtender.stderr.println("Python name:"+Config.getPythonName());
         tfSqlmapPath.setText(Config.getSqlmapPath());
         tfSqlmapOption.setText(Config.getSqlmapOptionsCommand());
     }

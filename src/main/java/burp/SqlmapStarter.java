@@ -36,7 +36,7 @@ public class SqlmapStarter implements Runnable {
                         "        do script \"%s\"\n" +
                         "end tell";
                 cmds.add(String.format(cmd,command));
-                BurpExtender.stdout.println(String.format(cmd,command));
+                //BurpExtender.stdout.println(String.format(cmd,command));
             }else if(osType == Util.OS_LINUX){
                 cmds.add("/bin/sh");
                 cmds.add("-c");
