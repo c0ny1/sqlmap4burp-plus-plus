@@ -15,9 +15,9 @@ public class Menu implements IContextMenuFactory {
     public List<JMenuItem> createMenuItems(final IContextMenuInvocation invocation) {
         List<JMenuItem> list = new ArrayList<JMenuItem>();
 
-        if(invocation.getInvocationContext() != IContextMenuInvocation.CONTEXT_MESSAGE_EDITOR_REQUEST){
-            return list;
-        }
+//        if(invocation.getInvocationContext() != IContextMenuInvocation.CONTEXT_MESSAGE_EDITOR_REQUEST){
+//            return list;
+//        }
 
         JMenuItem jMenuItem = new JMenuItem("Send to sqlmap4burp++");
         list.add(jMenuItem);
