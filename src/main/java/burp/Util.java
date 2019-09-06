@@ -5,8 +5,10 @@ import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.datatransfer.Transferable;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
 import java.util.Properties;
 
 public class Util {
@@ -59,10 +61,12 @@ public class Util {
         Properties properties = System.getProperties();
         String tempDir = (String) properties.get("java.io.tmpdir");
         String batFile = (tempDir + File.separator + filename);
+        String sysEncoding = System.getProperty("file.encoding");
         try {
-            FileOutputStream fos = new FileOutputStream(batFile);
-            fos.write(content.getBytes());
-            fos.close();
+            OutputStreamWriter write = new OutputStreamWriter(new FileOutputStream(batFile),sysEncoding);
+            BufferedWriter writer=new BufferedWriter(write);
+            writer.write(content);
+            writer.close();
             return batFile;
         } catch (Exception e) {
             BurpExtender.stderr.println("[*] "+e.getMessage());
