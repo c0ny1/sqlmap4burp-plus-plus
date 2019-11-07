@@ -2,7 +2,7 @@ package burp;
 
 public class Config {
     private static final String EXTENDER_NAME = "sqlmap4burp++";
-    private static final String EXTENDER_VERSION = "0.1";
+    private static final String EXTENDER_VERSION = "0.2";
     private static String PYTHON_NAME = "python";
     private static String SQLMAP_PATH = "sqlmap";
     private static String REQUST_FILE_PATH = "";
