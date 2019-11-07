@@ -13,7 +13,7 @@ public class SqlmapStarter implements Runnable {
     @Override
     public void run() {
         try {
-            String command = String.format("%s %s -r %s %s",Config.getPythonName(),Config.getSqlmapPath(),Config.getRequstFilePath(),Config.getSqlmapOptionsCommand());
+            String command = String.format("%s \"%s\" -r \"%s\" %s",Config.getPythonName(),Config.getSqlmapPath(),Config.getRequstFilePath(),Config.getSqlmapOptionsCommand());
             List<String> cmds = new ArrayList();
             int osType = Util.getOSType();
             if(osType == Util.OS_WIN){
@@ -29,6 +29,10 @@ public class SqlmapStarter implements Runnable {
                     return;
                 }
             }else if(osType == Util.OS_MAC){
+                String optionCommand = Config.getSqlmapOptionsCommand();
+                //将参数数中的"转译为\"
+                optionCommand = optionCommand.replace("\"","\\\"");
+                command = String.format("%s \\\"%s\\\" -r \\\"%s\\\" %s",Config.getPythonName(),Config.getSqlmapPath(),Config.getRequstFilePath(),optionCommand);
                 cmds.add("osascript");
                 cmds.add("-e");
                 String cmd = "tell application \"Terminal\" \n" +
